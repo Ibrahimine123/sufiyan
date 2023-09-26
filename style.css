@@ -1,0 +1,84 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #000;
+    color: #fff;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00f; 
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+}
+
+.skills p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #00f;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .name {
+        margin-bottom: 20px;
+    }
+}
